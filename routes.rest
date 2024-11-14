@@ -5,9 +5,63 @@ GET http://localhost:3000/contacts
 ### Get contact by id
 GET http://localhost:3000/contacts/672fdc834757911413efbaf6
 
+### Create new contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Test",
+    "lastName": "Last",
+    "email": "test@test.com",
+    "favoriteColor": "Green",
+    "birthday": "01/01/2000"
+}
+
+### Update contact
+PUT http://localhost:3000/contacts/67360c0c0b1418ecfeae33eb HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Test Edit",
+    "lastName": "Last Edit",
+    "email": "edit@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "01/01/1999"
+}
+
+### Delete contact
+DELETE http://localhost:3000/contacts/67360c0c0b1418ecfeae33eb
+
 // PRODUCTION
 ### Get all contacts
 GET http://cse341-contactsproject-zhmf.onrender.com/contacts
 
 ### Get contact by id
 GET http://cse341-contactsproject-zhmf.onrender.com/contacts/672fdc834757911413efbaf6
+
+### Create new contact
+POST http://cse341-contactsproject-zhmf.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Test",
+    "lastName": "Last",
+    "email": "test@test.com",
+    "favoriteColor": "Green",
+    "birthday": "01/01/2000"
+}
+
+### Update contact
+PUT http://cse341-contactsproject-zhmf.onrender.com/contacts/67360c0c0b1418ecfeae33eb HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Test Edit",
+    "lastName": "Last Edit",
+    "email": "edit@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "01/01/1999"
+}
+
+### Delete contact
+DELETE http://cse341-contactsproject-zhmf.onrender.com/contacts/67360c0c0b1418ecfeae33eb
