@@ -52,7 +52,7 @@ content-type: application/json
 }
 
 ### Update contact
-PUT http://cse341-contactsproject-zhmf.onrender.com/contacts/67360c0c0b1418ecfeae33eb HTTP/1.1
+PUT http://cse341-contactsproject-zhmf.onrender.com/contacts/67361f928b3858a2b0292c8a HTTP/1.1
 content-type: application/json
 
 {
@@ -64,4 +64,4 @@ content-type: application/json
 }
 
 ### Delete contact
-DELETE http://cse341-contactsproject-zhmf.onrender.com/contacts/67360c0c0b1418ecfeae33eb
+DELETE http://cse341-contactsproject-zhmf.onrender.com/contacts/67361f928b3858a2b0292c8a
